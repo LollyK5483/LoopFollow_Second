@@ -90,10 +90,10 @@ extension MainViewController {
         let maxBasal = UserDefaultsRepository.minBasalScale.value
         let lineBasal = LineChartDataSet(entries:chartEntry, label: "")
         lineBasal.setDrawHighlightIndicators(false)
-        lineBasal.setColor(NSUIColor.systemBlue, alpha: 0.5)
+        lineBasal.setColor(NSUIColor.systemPink, alpha: 0.5)
         lineBasal.lineWidth = 0
         lineBasal.drawFilledEnabled = true
-        lineBasal.fillColor = NSUIColor.systemBlue
+        lineBasal.fillColor = NSUIColor.systemPink
         lineBasal.fillAlpha = 0.5
         lineBasal.drawCirclesEnabled = false
         lineBasal.axisDependency = YAxis.AxisDependency.left
@@ -157,7 +157,7 @@ extension MainViewController {
         let chartBasalScheduledEntry = [ChartDataEntry]()
         let lineBasalScheduled = LineChartDataSet(entries:chartBasalScheduledEntry, label: "")
         lineBasalScheduled.setDrawHighlightIndicators(false)
-        lineBasalScheduled.setColor(NSUIColor.systemBlue, alpha: 0.8)
+        lineBasalScheduled.setColor(NSUIColor.systemPink, alpha: 0.8)
         lineBasalScheduled.lineWidth = 2
         lineBasalScheduled.drawFilledEnabled = false
         lineBasalScheduled.drawCirclesEnabled = false
@@ -1053,7 +1053,7 @@ extension MainViewController {
         lineOverride.lineWidth = 0
         lineOverride.drawFilledEnabled = true
         lineOverride.fillFormatter = OverrideFillFormatter()
-        lineOverride.fillColor = NSUIColor.systemGreen
+        lineOverride.fillColor = NSUIColor.systemPink
         lineOverride.fillAlpha = 0.6
         lineOverride.drawCirclesEnabled = false
         lineOverride.axisDependency = YAxis.AxisDependency.right
@@ -1082,7 +1082,7 @@ extension MainViewController {
         lineSuspend.circleColors = [NSUIColor.systemTeal.withAlphaComponent(0.75)]
         lineSuspend.drawCircleHoleEnabled = false
         lineSuspend.setDrawHighlightIndicators(false)
-        lineSuspend.setColor(NSUIColor.systemGray2, alpha: 1.0)
+        lineSuspend.setColor(NSUIColor.systemRed, alpha: 1.0)
         lineSuspend.drawCirclesEnabled = true
         lineSuspend.lineWidth = 0
         lineSuspend.highlightEnabled = false
@@ -1097,7 +1097,7 @@ extension MainViewController {
         lineResume.circleColors = [NSUIColor.systemTeal.withAlphaComponent(0.75)]
         lineResume.drawCircleHoleEnabled = false
         lineResume.setDrawHighlightIndicators(false)
-        lineResume.setColor(NSUIColor.systemGray4, alpha: 1.0)
+        lineResume.setColor(NSUIColor.systemGreen, alpha: 1.0)
         lineResume.drawCirclesEnabled = true
         lineResume.lineWidth = 0
         lineResume.highlightEnabled = false
@@ -1112,7 +1112,7 @@ extension MainViewController {
         lineSensor.circleColors = [NSUIColor.systemIndigo.withAlphaComponent(0.75)]
         lineSensor.drawCircleHoleEnabled = false
         lineSensor.setDrawHighlightIndicators(false)
-        lineSensor.setColor(NSUIColor.systemGray3, alpha: 1.0)
+        lineSensor.setColor(NSUIColor.systemGreen, alpha: 1.0)
         lineSensor.drawCirclesEnabled = true
         lineSensor.lineWidth = 0
         lineSensor.highlightEnabled = false
